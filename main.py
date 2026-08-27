@@ -5,7 +5,7 @@ Shipwreck Hunters — Autonomous Video Agent
 """
 import os, json, random, asyncio, requests, urllib.parse
 import edge_tts
-from moviepy.editor import (ImageClip, AudioFileClip, CompositeVideoClip,
+from moviepy import (ImageClip, AudioFileClip, CompositeVideoClip,
                              concatenate_videoclips, vfx)
 
 OUTPUT_DIR = "output"
