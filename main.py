@@ -63,9 +63,9 @@ Return ONLY valid JSON, no markdown, no explanation, in this exact format:
 motion must be one of: zoom_in, zoom_out, pan_left, pan_right (vary them across scenes).
 image_prompt must be a vivid cinematic visual description, no text/words in the image, no real identifiable people.
 """
-      url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
-      headers = {"x-goog-api-key": GEMINI_API_KEY, "Content-Type": "application/json"}
-      resp = requests.post(url, headers=headers, json={"contents": [{"parts": [{"text": prompt}]}]}, timeout=120)                           
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+    headers = {"x-goog-api-key": GEMINI_API_KEY, "Content-Type": "application/json"}
+    resp = requests.post(url, headers=headers, json={"contents": [{"parts": [{"text": prompt}]}]}, timeout=120)                           
 
                                  
     resp.raise_for_status()
