@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         
         
-        run: pip install edge-tts "moviepy==1.0.3" "pillow<10" requests numpy
+        run: pip install edge-tts moviepy requests pillow numpy
 
       - name: Run agent
         env:
